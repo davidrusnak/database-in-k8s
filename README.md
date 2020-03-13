@@ -12,7 +12,10 @@ sudo kubeadm init --apiserver-advertise-address=<ip of master node>
 
 sudo useradd user -G sudo -m -s /bin/bash
 $ sudo passwd user
+```
+Then as the created (user) user, execute:
 
+```
 mkdir -p $HOME/
 sudo cp -i /etc/kubernetes/admin.conf $HOME/config
 sudo chown $(id -u):$(id -g) $HOME/config
