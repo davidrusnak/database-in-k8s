@@ -7,7 +7,7 @@ initial settings:
 https://blog.alexellis.io/kubernetes-in-10-minutes/
 
 On master node:
-'''
+```
 sudo kubeadm init --apiserver-advertise-address=<ip of master node>
 
 sudo useradd user -G sudo -m -s /bin/bash
@@ -16,4 +16,4 @@ $ sudo passwd user
 mkdir -p $HOME/.kube
 sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 sudo chown $(id -u):$(id -g) $HOME/.kube/config
-'''
+```
